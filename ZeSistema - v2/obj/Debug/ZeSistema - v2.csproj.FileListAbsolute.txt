@@ -1,0 +1,40 @@
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\ZeSistema - v2.exe.config
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\ZeSistema - v2.exe
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\ZeSistema - v2.pdb
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\BouncyCastle.Crypto.dll
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\Google.Protobuf.dll
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\K4os.Compression.LZ4.dll
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\K4os.Hash.xxHash.dll
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\MySql.Data.dll
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\System.Buffers.dll
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\System.Memory.dll
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\System.Numerics.Vectors.dll
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\Ubiety.Dns.Core.dll
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\ZstdNet.dll
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\Google.Protobuf.pdb
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\Google.Protobuf.xml
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\K4os.Compression.LZ4.xml
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\K4os.Hash.xxHash.xml
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\MySql.Data.xml
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\System.Buffers.xml
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\System.Memory.xml
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\System.Numerics.Vectors.xml
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema - v2.csproj.AssemblyReference.cache
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema - v2.csproj.SuggestedBindingRedirects.cache
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema___v2.Loading.resources
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema___v2.Properties.Resources.resources
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Login.LoginForm.resources
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema - v2.csproj.GenerateResource.cache
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema - v2.csproj.CoreCompileInputs.cache
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema - v2.csproj.CopyComplete
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema - v2.exe
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema - v2.pdb
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Dashboard.resources
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Categorias.CategoriasForm.resources
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Categorias.ListarCategoriasForm.resources
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Categorias.AtualizarCategoriaForm.resources
+E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Categorias.DeletarCategoriaForm.resources
