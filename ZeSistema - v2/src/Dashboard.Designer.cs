@@ -31,11 +31,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btFexa2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btCategorias = new System.Windows.Forms.Button();
             this.btGastos = new System.Windows.Forms.Button();
             this.btReceitas = new System.Windows.Forms.Button();
             this.btCriarUsuario = new System.Windows.Forms.Button();
             this.btSair = new System.Windows.Forms.Button();
-            this.btCategorias = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -75,6 +75,18 @@
             this.panel2.Size = new System.Drawing.Size(182, 626);
             this.panel2.TabIndex = 1;
             // 
+            // btCategorias
+            // 
+            this.btCategorias.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCategorias.Location = new System.Drawing.Point(0, 89);
+            this.btCategorias.Name = "btCategorias";
+            this.btCategorias.Size = new System.Drawing.Size(182, 36);
+            this.btCategorias.TabIndex = 10;
+            this.btCategorias.Text = "Categorias";
+            this.btCategorias.UseVisualStyleBackColor = true;
+            this.btCategorias.Click += new System.EventHandler(this.btCategorias_Click);
+            // 
             // btGastos
             // 
             this.btGastos.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -96,6 +108,7 @@
             this.btReceitas.TabIndex = 8;
             this.btReceitas.Text = "Receitas";
             this.btReceitas.UseVisualStyleBackColor = true;
+            this.btReceitas.Click += new System.EventHandler(this.btReceitas_Click);
             // 
             // btCriarUsuario
             // 
@@ -119,18 +132,6 @@
             this.btSair.Text = "Sair";
             this.btSair.UseVisualStyleBackColor = true;
             this.btSair.Click += new System.EventHandler(this.btSair_Click);
-            // 
-            // btCategorias
-            // 
-            this.btCategorias.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCategorias.Location = new System.Drawing.Point(0, 89);
-            this.btCategorias.Name = "btCategorias";
-            this.btCategorias.Size = new System.Drawing.Size(182, 36);
-            this.btCategorias.TabIndex = 10;
-            this.btCategorias.Text = "Categorias";
-            this.btCategorias.UseVisualStyleBackColor = true;
-            this.btCategorias.Click += new System.EventHandler(this.btCategorias_Click);
             // 
             // Dashboard
             // 

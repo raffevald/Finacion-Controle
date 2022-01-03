@@ -100,5 +100,29 @@ namespace ZeSistema___v2.src.DataBase
             }
 
         }
+
+        public DataTable ListarTodosOsRecebimentos()
+        {
+            string strSQL;
+
+            try
+            {
+                DataTable dt = new DataTable();
+
+                strSQL = $"CALL ListarRecebimentos({LoginForm.dbUserId});";
+                ListagemDB(strSQL);
+
+                ListagemDB(strSQL).Fill(dt);
+
+                return dt;
+
+             //   strSQL = "";
+
+
+            } catch (Exception error)
+            {
+                return null;
+            }
+        }
     }
 }

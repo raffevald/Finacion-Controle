@@ -38,3 +38,45 @@ E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Categorias.
 E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Categorias.ListarCategoriasForm.resources
 E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Categorias.AtualizarCategoriaForm.resources
 E:\dev\c#\ZeSistema - v2\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Categorias.DeletarCategoriaForm.resources
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\ZeSistema - v2.exe.config
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\ZeSistema - v2.exe
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\ZeSistema - v2.pdb
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\BouncyCastle.Crypto.dll
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\Google.Protobuf.dll
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\K4os.Compression.LZ4.dll
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\K4os.Hash.xxHash.dll
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\MySql.Data.dll
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\System.Buffers.dll
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\System.Memory.dll
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\System.Numerics.Vectors.dll
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\Ubiety.Dns.Core.dll
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\ZstdNet.dll
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\Google.Protobuf.pdb
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\Google.Protobuf.xml
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\K4os.Compression.LZ4.xml
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\K4os.Hash.xxHash.xml
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\MySql.Data.xml
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\System.Buffers.xml
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\System.Memory.xml
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\System.Numerics.Vectors.xml
+E:\git\Financial-Control\ZeSistema - v2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema - v2.csproj.AssemblyReference.cache
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema - v2.csproj.SuggestedBindingRedirects.cache
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema___v2.Loading.resources
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema___v2.Properties.Resources.resources
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Categorias.AtualizarCategoriaForm.resources
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Categorias.CategoriasForm.resources
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Categorias.DeletarCategoriaForm.resources
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Categorias.ListarCategoriasForm.resources
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Dashboard.resources
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Login.LoginForm.resources
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Receitas.ReceitasForm.resources
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema - v2.csproj.GenerateResource.cache
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema - v2.csproj.CoreCompileInputs.cache
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema - v2.csproj.CopyComplete
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema - v2.exe
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema - v2.pdb
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Receitas.ReceitaCadastroDadosForm.resources

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ZeSistema___v2.src.Login;
 using ZeSistema___v2.src.Categorias;
+using ZeSistema___v2.src.Receitas;
 
 namespace ZeSistema___v2.src
 {
@@ -35,6 +36,12 @@ namespace ZeSistema___v2.src
         {
             CategoriasFormControle categoriasFormControle = new CategoriasFormControle();
             categoriasFormControle.MostrarCategoriaForm();
+        }
+
+        private void btReceitas_Click(object sender, EventArgs e)
+        {
+            ReceitasFormControle receitasFormControle = new ReceitasFormControle();
+            receitasFormControle.MostrarReceitasForme();
         }
     }
 }
