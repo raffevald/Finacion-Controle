@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using ZeSistema___v2.src.Login;
 using ZeSistema___v2.src.Categorias;
 using ZeSistema___v2.src.Receitas;
+using ZeSistema___v2.src.Login;
 
 namespace ZeSistema___v2.src
 {
@@ -18,6 +19,9 @@ namespace ZeSistema___v2.src
         public Dashboard()
         {
             InitializeComponent();
+            tbNomeDoUsuario.Text = LoginForm.dbUserName;
+            tbCodigoDoUsuario.Text = Convert.ToString(LoginForm.dbUserId);
+
         }
 
         private void btSair_Click(object sender, EventArgs e)
@@ -42,6 +46,11 @@ namespace ZeSistema___v2.src
         {
             ReceitasFormControle receitasFormControle = new ReceitasFormControle();
             receitasFormControle.MostrarReceitasForme();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

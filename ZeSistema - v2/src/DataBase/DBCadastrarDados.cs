@@ -11,6 +11,12 @@ namespace ZeSistema___v2.src.DataBase
     {
         MySqlCommand command;
         MySqlConnection connection;
+
+        public DBCadastrarDados()
+        {
+
+        }
+
         public void ExQuerySQL(string strSQL)
         {
             try
@@ -20,7 +26,6 @@ namespace ZeSistema___v2.src.DataBase
                 connection.Open();
                 command = new MySqlCommand(strSQL, connection);
                 command.ExecuteNonQuery();
-
             }
             catch (Exception error)
             {

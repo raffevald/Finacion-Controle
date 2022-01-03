@@ -42,7 +42,6 @@ namespace ZeSistema___v2.src.DataBase
                 int id_user_fk;
 
                 LoginForm login = new LoginForm();
-
                 DataTable dt = new DataTable();
 
                 id_user_fk = LoginForm.dbUserId;
@@ -50,7 +49,6 @@ namespace ZeSistema___v2.src.DataBase
                 strSQL = $"SELECT categorias.id_cat as 'Codigo', categorias.descricao_cat as 'Descrição', categorias.tipo_de_categoria_cat as 'Tipo de categoria', categorias.data_de_insercao_cat 'Data de cadastro', categorias.data_de_atualizacao_cat as 'Data de atualização' FROM categorias WHERE categorias.id_usuario_fk = '{id_user_fk}'";
 
                 ListagemDB(strSQL);
-
                 ListagemDB(strSQL).Fill(dt);
 
                 return dt;
@@ -73,7 +71,6 @@ namespace ZeSistema___v2.src.DataBase
                 int id_user_fk;
 
                 LoginForm login = new LoginForm();
-
                 DataTable dt = new DataTable();
 
                 id_user_fk = LoginForm.dbUserId;
@@ -87,7 +84,6 @@ namespace ZeSistema___v2.src.DataBase
                 }
 
                 ListagemDB(strSQL);
-
                 ListagemDB(strSQL).Fill(dt);
 
                 return dt;
@@ -110,14 +106,11 @@ namespace ZeSistema___v2.src.DataBase
                 DataTable dt = new DataTable();
 
                 strSQL = $"CALL ListarRecebimentos({LoginForm.dbUserId});";
+                
                 ListagemDB(strSQL);
-
                 ListagemDB(strSQL).Fill(dt);
 
                 return dt;
-
-             //   strSQL = "";
-
 
             } catch (Exception error)
             {

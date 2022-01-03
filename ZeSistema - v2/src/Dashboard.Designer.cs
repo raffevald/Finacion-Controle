@@ -36,6 +36,8 @@
             this.btReceitas = new System.Windows.Forms.Button();
             this.btCriarUsuario = new System.Windows.Forms.Button();
             this.btSair = new System.Windows.Forms.Button();
+            this.tbNomeDoUsuario = new System.Windows.Forms.TextBox();
+            this.tbCodigoDoUsuario = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -133,21 +135,41 @@
             this.btSair.UseVisualStyleBackColor = true;
             this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 
+            // tbNomeDoUsuario
+            // 
+            this.tbNomeDoUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNomeDoUsuario.Location = new System.Drawing.Point(810, 46);
+            this.tbNomeDoUsuario.Name = "tbNomeDoUsuario";
+            this.tbNomeDoUsuario.Size = new System.Drawing.Size(274, 26);
+            this.tbNomeDoUsuario.TabIndex = 2;
+            // 
+            // tbCodigoDoUsuario
+            // 
+            this.tbCodigoDoUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCodigoDoUsuario.Location = new System.Drawing.Point(810, 90);
+            this.tbCodigoDoUsuario.Name = "tbCodigoDoUsuario";
+            this.tbCodigoDoUsuario.Size = new System.Drawing.Size(274, 26);
+            this.tbCodigoDoUsuario.TabIndex = 3;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1113, 656);
             this.ControlBox = false;
+            this.Controls.Add(this.tbCodigoDoUsuario);
+            this.Controls.Add(this.tbNomeDoUsuario);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -161,5 +183,7 @@
         private System.Windows.Forms.Button btReceitas;
         private System.Windows.Forms.Button btFexa2;
         private System.Windows.Forms.Button btCategorias;
+        private System.Windows.Forms.TextBox tbNomeDoUsuario;
+        private System.Windows.Forms.TextBox tbCodigoDoUsuario;
     }
 }

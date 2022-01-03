@@ -107,17 +107,16 @@ namespace ZeSistema___v2.src.Receitas
             foreach (var letra in categoria) if (Char.IsDigit(letra)) sb.Append(letra);
             id_categoria_fk = Convert.ToInt32(sb.ToString());
 
-            strSQL = $"CALL CadastrarRecebimentos('{descricao}', {valorRecebido}, '{dataDeCadastro}', {qtdDeParcelasTotal}, {qtdDeParcelasPagas}, '{statusRecebimento}', '{dataDeVencimento}', '{formaDeRecebimento}', {LoginForm.dbUserId}, {id_categoria_fk});";
+            strSQL = $"CALL CadastrarRecebimentos('{descricao}', {valorRecebido}, '{dataDeCadastro}', {qtdDeParcelasTotal}, {qtdDeParcelasPagas}, '{statusRecebimento}', '{dataDeVencimento}', '{formaDeRecebimento}', {LoginForm.dbUserId}, {id_categoria_fk})";
 
-            DBCadastrarDados cadastrarCategoriasReceitas = new DBCadastrarDados();
-            cadastrarCategoriasReceitas.ExQuerySQL(strSQL);
+            DBCadastrarDados dBCadastrarDados = new DBCadastrarDados();
+            dBCadastrarDados.ExQuerySQL(strSQL);
 
-            tbDescricao.Text = "";
-            strSQL = "";
+         //   tbDescricao.Text = "";
+         //   strSQL = "";
 
             DBListarDados dBListarDados = new DBListarDados();
             dgvFormulario.DataSource = dBListarDados.ListarTodosOsRecebimentos();
-
 
         }
     }
