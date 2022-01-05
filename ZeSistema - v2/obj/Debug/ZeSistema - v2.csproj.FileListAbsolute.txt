@@ -80,3 +80,4 @@ E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema - v2.csproj.CopyComp
 E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema - v2.exe
 E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema - v2.pdb
 E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Receitas.ReceitaCadastroDadosForm.resources
+E:\git\Financial-Control\ZeSistema - v2\obj\Debug\ZeSistema___v2.src.Receitas.ReceitasAtualizarDadosForm.resources

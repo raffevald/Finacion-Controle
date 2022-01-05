@@ -146,6 +146,8 @@
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\Login\LoginFormControle.cs" />
+    <Compile Include="src\Receitas\AtualizarReceitas.cs" />
+    <Compile Include="src\Receitas\CadastrarReceitas.cs" />
     <Compile Include="src\Receitas\DBListarCategorias.cs" />
     <Compile Include="src\Receitas\ReceitaCadastroDadosForm.cs">
       <SubType>Form</SubType>
@@ -154,6 +156,13 @@
       <DependentUpon>ReceitaCadastroDadosForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\Receitas\ReceitaCadastroDadosFormControle.cs" />
+    <Compile Include="src\Receitas\ReceitasAtualizarDadosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Receitas\ReceitasAtualizarDadosForm.Designer.cs">
+      <DependentUpon>ReceitasAtualizarDadosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Receitas\ReceitasAtualizarDadosFormControler.cs" />
     <Compile Include="src\Receitas\ReceitasForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Receitas\ReceitaCadastroDadosForm.resx">
       <DependentUpon>ReceitaCadastroDadosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Receitas\ReceitasAtualizarDadosForm.resx">
+      <DependentUpon>ReceitasAtualizarDadosForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Receitas\ReceitasForm.resx">
       <DependentUpon>ReceitasForm.cs</DependentUpon>

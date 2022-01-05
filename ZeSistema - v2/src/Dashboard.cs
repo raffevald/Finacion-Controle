@@ -52,5 +52,10 @@ namespace ZeSistema___v2.src
         {
 
         }
+
+        public void MostrarGanhosDoMes()
+        {
+
+        }
     }
 }

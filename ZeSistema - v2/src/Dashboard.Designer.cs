@@ -38,8 +38,10 @@
             this.btSair = new System.Windows.Forms.Button();
             this.tbNomeDoUsuario = new System.Windows.Forms.TextBox();
             this.tbCodigoDoUsuario = new System.Windows.Forms.TextBox();
+            this.dgvReceitasDashBord = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReceitasDashBord)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -151,12 +153,23 @@
             this.tbCodigoDoUsuario.Size = new System.Drawing.Size(274, 26);
             this.tbCodigoDoUsuario.TabIndex = 3;
             // 
+            // dgvReceitasDashBord
+            // 
+            this.dgvReceitasDashBord.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvReceitasDashBord.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvReceitasDashBord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReceitasDashBord.Location = new System.Drawing.Point(205, 46);
+            this.dgvReceitasDashBord.Name = "dgvReceitasDashBord";
+            this.dgvReceitasDashBord.Size = new System.Drawing.Size(364, 192);
+            this.dgvReceitasDashBord.TabIndex = 4;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1113, 656);
             this.ControlBox = false;
+            this.Controls.Add(this.dgvReceitasDashBord);
             this.Controls.Add(this.tbCodigoDoUsuario);
             this.Controls.Add(this.tbNomeDoUsuario);
             this.Controls.Add(this.panel2);
@@ -168,6 +181,7 @@
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReceitasDashBord)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,5 +199,6 @@
         private System.Windows.Forms.Button btCategorias;
         private System.Windows.Forms.TextBox tbNomeDoUsuario;
         private System.Windows.Forms.TextBox tbCodigoDoUsuario;
+        private System.Windows.Forms.DataGridView dgvReceitasDashBord;
     }
 }
