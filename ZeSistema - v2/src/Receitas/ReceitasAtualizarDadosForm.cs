@@ -15,6 +15,8 @@ namespace ZeSistema___v2.src.Receitas
 {
     public partial class ReceitasAtualizarDadosForm : Form
     {
+         public static int contDataRecebimento = 0;
+        public static int contDataVencimento = 0;
         public ReceitasAtualizarDadosForm()
         {
             InitializeComponent();
@@ -28,6 +30,9 @@ namespace ZeSistema___v2.src.Receitas
             AtualizarReceitas atualizarReceitas = new AtualizarReceitas();
             MessageBox.Show(atualizarReceitas.AtualizarReceitasDB(tbCodigo.Text, cbCategoria.Text, tbDescricao.Text, tbValorRecebido.Text, cbStatusRecebimento.Text, cbFormaDeRecebimento.Text, Convert.ToString(dtpDataDeCadastro.Value),
                 Convert.ToString(dtpDataDeVencimento.Value), tbQuantidadeDeParcelasTotal.Text, tbQuantidadeDeParcelasPagas.Text));
+
+            DBListarDados dBListarDados = new DBListarDados();
+            dgvFormulario.DataSource = dBListarDados.ListarTodosOsRecebimentos();
         }
 
         public void PopularComboBox()
@@ -53,6 +58,16 @@ namespace ZeSistema___v2.src.Receitas
                 cbCategoria.Items.Add($"{categoriaCodigo} - {categoria}");
             }
 
+        }
+
+        private void dtpDataDeCadastro_ValueChanged(object sender, EventArgs e)
+        {
+            contDataRecebimento = contDataRecebimento + 1;
+        }
+
+        private void dtpDataDeVencimento_ValueChanged(object sender, EventArgs e)
+        {
+            contDataVencimento = contDataVencimento + 1;
         }
     }
 }
