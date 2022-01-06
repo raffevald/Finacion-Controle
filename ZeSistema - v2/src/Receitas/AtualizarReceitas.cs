@@ -93,7 +93,7 @@ namespace ZeSistema___v2.src.Receitas
                         }
                     }
 
-                    if (descricao != "" & (categoria != "Selecione uma categoria" || categoria != "") & valorRecebidoText != "" & (statusRecebimento != "Selecione o status" || statusRecebimento != "") & (formaDeRecebimento != "Selecione o tipo de recebimento" || formaDeRecebimento != "") & qtdDeParcelasTotalText == "1" & qtdDeParcelasPagasText == "1" & ReceitasAtualizarDadosForm.contDataRecebimento == 0 & ReceitasAtualizarDadosForm.contDataVencimento == 0)
+                    if (descricao != "" & categoria != "Selecione uma categoria" & valorRecebidoText != "" & statusRecebimento != "Selecione o status" & formaDeRecebimento != "Selecione o tipo de recebimento" & qtdDeParcelasTotalText == "1" & qtdDeParcelasPagasText == "1" & ReceitasAtualizarDadosForm.contDataRecebimento == 0 & ReceitasAtualizarDadosForm.contDataVencimento == 0)
                     {
                         try
                         {
@@ -108,27 +108,18 @@ namespace ZeSistema___v2.src.Receitas
                         }
                     }
 
-                    if (descricao != "" & (categoria != "Selecione uma categoria" || categoria != "") & valorRecebidoText != "" & (statusRecebimento != "Selecione o status" & statusRecebimento != "") & (formaDeRecebimento != "Selecione o tipo de recebimento" & formaDeRecebimento != "") & qtdDeParcelasTotalText != "1" & qtdDeParcelasPagasText == "1" & ReceitasAtualizarDadosForm.contDataRecebimento == 0 & ReceitasAtualizarDadosForm.contDataVencimento == 0)
+                    if (descricao != "" & categoria != "Selecione uma categoria" & valorRecebidoText != "" & statusRecebimento != "Selecione o status" & formaDeRecebimento != "Selecione o tipo de recebimento" & qtdDeParcelasTotalText != "" & qtdDeParcelasPagasText == "1" & ReceitasAtualizarDadosForm.contDataRecebimento == 0 & ReceitasAtualizarDadosForm.contDataVencimento == 0)
                     {
+                        double valorTemp;
+                        Int64 qtdTotalParcTemp = 0;
+
                         try
                         {
-                            double valorTemp;
                             valorTemp = Convert.ToDouble(valorRecebidoText);
 
                             try
                             {
-                                Int64 qtdTotalParcTemp = 0;
-                                qtdTotalParcTemp = Convert.ToInt64(qtdTotalParcTemp);
-
-                                if (qtdTotalParcTemp > 1)
-                                {
-                                  //  srtSQL = $"UPDATE Recebimentos SET Recebimentos.quantidade_de_parcelas_total_receb = {qtdTotalParcTemp}, Recebimentos.forma_de_recebimento_receb = '{formaDeRecebimento}', Recebimentos.status_recebimentos_receb = '{statusRecebimento}', Recebimentos.valor_receb = {valorTemp}, Recebimentos.descricao_receb = '{descricao}', Recebimentos.id_categoria_fk = {id_categoria_fk} WHERE Recebimentos.id_receb = {codigo} AND Recebimentos.id_usuario_fk = {LoginForm.dbUserId};";
-                                } else
-                                {
-                                    return "Numero minimo de parcelas totais é 1.";
-                                }
-
-                                srtSQL = $"UPDATE Recebimentos SET Recebimentos.quantidade_de_parcelas_total_receb = {qtdTotalParcTemp}, Recebimentos.forma_de_recebimento_receb = '{formaDeRecebimento}', Recebimentos.status_recebimentos_receb = '{statusRecebimento}', Recebimentos.valor_receb = {valorTemp}, Recebimentos.descricao_receb = '{descricao}', Recebimentos.id_categoria_fk = {id_categoria_fk} WHERE Recebimentos.id_receb = {codigo} AND Recebimentos.id_usuario_fk = {LoginForm.dbUserId};";
+                                qtdTotalParcTemp = Convert.ToInt64(qtdDeParcelasTotalText);
                             }
                             catch (Exception)
                             {
@@ -139,7 +130,72 @@ namespace ZeSistema___v2.src.Receitas
                         {
                             return "Favor informe um valor valido.";
                         }
+
+
+                        if (qtdTotalParcTemp > 1)
+                        {
+                              srtSQL = $"UPDATE Recebimentos SET Recebimentos.quantidade_de_parcelas_total_receb = {qtdTotalParcTemp}, Recebimentos.forma_de_recebimento_receb = '{formaDeRecebimento}', Recebimentos.status_recebimentos_receb = '{statusRecebimento}', Recebimentos.valor_receb = {valorTemp}, Recebimentos.descricao_receb = '{descricao}', Recebimentos.id_categoria_fk = {id_categoria_fk} WHERE Recebimentos.id_receb = {codigo} AND Recebimentos.id_usuario_fk = {LoginForm.dbUserId};";
+                        }
+                        else
+                        {
+                            return "Numero minimo de parcelas totais é 1.";
+                        }
+
                     }
+
+                    if (descricao != "" & categoria != "Selecione uma categoria" & valorRecebidoText != "" & statusRecebimento != "Selecione o status" & formaDeRecebimento != "Selecione o tipo de recebimento" & qtdDeParcelasTotalText != "" & qtdDeParcelasPagasText != "" & ReceitasAtualizarDadosForm.contDataRecebimento == 0 & ReceitasAtualizarDadosForm.contDataVencimento == 0)
+                    {
+                        double valorTemp;
+                        Int64 qtdTotalParcTemp = 0;
+                        Int64 qtdTotalParcPagasTemp = 0;
+
+                        try
+                        {
+                            valorTemp = Convert.ToDouble(valorRecebidoText);
+
+                            try
+                            {
+                                qtdTotalParcTemp = Convert.ToInt64(qtdDeParcelasTotalText);
+                            }
+                            catch (Exception)
+                            {
+                                return "Favor informe quantidade de parcelas validas.";
+                            }
+                        }
+                        catch (Exception)
+                        {
+                            return "Favor informe um valor valido.";
+                        }
+
+                        try
+                        {
+                            qtdTotalParcPagasTemp = Convert.ToInt64(qtdDeParcelasPagasText);
+                        }
+                        catch (Exception)
+                        {
+                            return "Favor informe quantidade de parcelas validas.";
+                        }
+
+                        if (qtdTotalParcTemp > 1)
+                        {
+                            if(qtdTotalParcPagasTemp >= 0)
+                            {
+                                srtSQL = $"UPDATE Recebimentos SET  Recebimentos.quantidade_de_parcelas_pagas_receb = {qtdTotalParcPagasTemp}, Recebimentos.quantidade_de_parcelas_total_receb = {qtdTotalParcTemp}, Recebimentos.forma_de_recebimento_receb = '{formaDeRecebimento}', Recebimentos.status_recebimentos_receb = '{statusRecebimento}', Recebimentos.valor_receb = {valorTemp}, Recebimentos.descricao_receb = '{descricao}', Recebimentos.id_categoria_fk = {id_categoria_fk} WHERE Recebimentos.id_receb = {codigo} AND Recebimentos.id_usuario_fk = {LoginForm.dbUserId};";
+                            }
+                            else
+                            {
+                                return "Valor informado invalido.";
+                            }
+                        }
+                        else
+                        {
+                            return "Numero minimo de parcelas totais é 1.";
+                        }
+                    }
+
+
+
+
 
 
 
